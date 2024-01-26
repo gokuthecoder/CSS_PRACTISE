@@ -5,7 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-html {
+html, body {
     height: 100%;
     width: 100%;
 }
@@ -16,9 +16,23 @@ html {
     background-color: #ededed;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 50% 20%;
 }
 
-.elem {
+#left-top-left {
     background-color: crimson;
-    border: 2px solid black;
+}
+
+#right{
+    background-color: blueviolet;
+    grid-row: 2 / 4;
+    grid-column: 3;
+}
+
+#left-center {
+    background-color: royalblue;
+}
+
+#left-bottom {
+    background-color: chartreuse;
 }
